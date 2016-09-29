@@ -1,0 +1,15 @@
+.captcha{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #161616;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.captcha_answer{
+    border: solid 1px #161616;
+    width: 200px;
+    height: 28px;
+    line-height: 30px;
+    padding: 2px;
+}
