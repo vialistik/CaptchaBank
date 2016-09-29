@@ -24,8 +24,8 @@ class Captcha{
         'neuf'
     );
 
-    private $hash1          = 'Hcz4@v8#';
-    private $hash2          = 'LHx42_{&yJ3y';
+    private $hash1          = 't+3F8Jz:';
+    private $hash2          = 'j49:v7~vARZ>';
     private $nbCryptCaract  = 44;
     private $destNO         = 'Erreur ! La réponse est incorrect';
     private $messageTokenOff = 'Votre session a expiré, merci de rafraîchir votre navigateur';
