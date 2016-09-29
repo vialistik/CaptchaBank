@@ -50,8 +50,10 @@ require 'app/Captcha/Captcha.php';
 
 
     <?php
-    $captcha    = new Captcha();
-    $captcha->verify();
+        $captcha    = new Captcha();
+        if($captcha->verify() === true){
+            echo "ok";
+        }
     ?>
 
 
