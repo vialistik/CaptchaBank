@@ -1,2 +1,2 @@
 # CaptchaBank
-A little captcha like the password of bank online
+A little captcha like an online bank password
