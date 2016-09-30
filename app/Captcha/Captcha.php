@@ -132,7 +132,11 @@ class Captcha{
     * Envoie validation du captcha
     */
     public function verify(){
-        return $this->get_reponse($_POST['question'], $_POST['answer_value'], $_POST['token_time'], $_POST['token']);
+        $sQuestion = filter_input(INPUT_POST, 'question', FILTER_SANITIZE_STRING);
+        $sAnswerValue = filter_input(INPUT_POST, 'answer_value', FILTER_SANITIZE_SPECIAL_CHARS);
+        $sTokenTime = filter_input(INPUT_POST, 'token_time', FILTER_SANITIZE_SPECIAL_CHARS);
+        $sToken = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_SPECIAL_CHARS);
+        return $this->get_reponse($sQuestion, $sAnswerValue, $sTokenTime, $sToken);
     }
 
 
